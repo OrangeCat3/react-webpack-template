@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './App.css';
+import routes from "./router/index";
+import { BrowserRouter } from 'react-router-dom'
+import { renderRoutes } from "react-router-config";
 
-function App() {
+export default memo(function App() {
   return (
-    <div className="App">
-      App
-    </div>
-  );
-}
-
-export default App;
+    <BrowserRouter>
+      {renderRoutes(routes)}
+    </BrowserRouter>
+  )
+})
