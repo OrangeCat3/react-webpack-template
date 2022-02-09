@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import './App.css';
+import './App.less';
 import routes from "./router/index";
 import { BrowserRouter } from 'react-router-dom'
 import { renderRoutes } from "react-router-config";
