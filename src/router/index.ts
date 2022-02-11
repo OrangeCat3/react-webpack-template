@@ -1,9 +1,15 @@
 import { RouteConfig} from "react-router-config";
 // import { } from "react-router-dom";
-import home from "../pages/home";
+import homeRoutes from './home';
+import anomalyRoutes from './anomaly';
 
 const routes: RouteConfig[] = [
-  { path: "/", exact:true, component: home }
+
 ]
 
-export default routes;
+const route = routes
+  .concat(homeRoutes)
+  .concat(anomalyRoutes)
+
+
+export default route;
