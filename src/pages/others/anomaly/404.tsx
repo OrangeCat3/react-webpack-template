@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./404.less";
-const svg404 = require("@assets/svg/404.svg")
+import svg404 from "@assets/svg/404.svg";
 
 const page404 = () => {
 

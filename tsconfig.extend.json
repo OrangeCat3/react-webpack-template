@@ -2,15 +2,15 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@assets": ["./assets"],
-      "@common": ["./common"],
-      "@components": ["./components"],
-      "@i18n": ["./i18n"],
-      "@pages": ["./pages"],
-      "@router": ["./router"],
-      "@services": ["./services"],
-      "@store": ["./store"],
-      "@utils": ["./utils"]
+      "@assets/*": ["./assets/*"],
+      "@common/*": ["./common/*"],
+      "@components/*": ["./components/*"],
+      "@i18n/*": ["./i18n/*"],
+      "@pages/*": ["./pages/*"],
+      "@router/*": ["./router/*"],
+      "@services/*": ["./services/*"],
+      "@store/*": ["./store/*"],
+      "@utils/*": ["./utils/*"]
     }
   }
 }
