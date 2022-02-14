@@ -36,6 +36,7 @@
     "fs-extra": "^10.0.0",
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
+    "immutable": "^4.0.0",
     "jest": "^27.4.3",
     "jest-resolve": "^27.4.2",
     "jest-watch-typeahead": "^1.0.0",
@@ -52,11 +53,14 @@
     "react-app-polyfill": "^3.0.0",
     "react-dev-utils": "^12.0.0",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
     "react-refresh": "^0.11.0",
     "react-router-config": "^5.1.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.0",
     "redux": "^4.1.2",
+    "redux-immutable": "^4.0.0",
+    "redux-thunk": "^2.4.1",
     "resolve": "^1.20.0",
     "resolve-url-loader": "^4.0.0",
     "sass-loader": "^12.3.0",
@@ -73,7 +77,7 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "craco start && node ./mock/mockSever.js",
     "build": "craco build",
     "test": "craco test"
   },
@@ -97,9 +101,15 @@
   },
   "devDependencies": {
     "@craco/craco": "^6.4.3",
+    "@types/koa": "^2.13.4",
+    "@types/mockjs": "^1.0.6",
+    "@types/react-redux": "^7.1.22",
     "@types/react-router-config": "^5.0.6",
+    "@types/redux-immutable": "^4.0.2",
     "craco-alias": "^3.0.1",
-    "craco-less": "^2.0.0"
+    "craco-less": "^2.0.0",
+    "koa": "^2.13.4",
+    "mockjs": "^1.1.0"
   },
   "jest": {
     "roots": [
