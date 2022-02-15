@@ -78,7 +78,6 @@
   },
   "scripts": {
     "start": "craco start",
-    "start no mock": "craco start",
     "build": "craco build",
     "test": "craco test",
     "mock": "nodemon ./src/mock/mockSever.js"
