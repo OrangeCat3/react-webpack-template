@@ -1,15 +1,13 @@
-import myRequest from "../index";
-
-enum HomeApi {
-  getHomeData =  '/getHomeData'
-}
-
-
+import Request from "../index";
 import { IHomeResult } from './types'
 import { IDataType } from '../types'
 
+enum HomeApi {
+  getHomeData = '/getHomeData'
+}
+
 export function getHome() {
-  return myRequest.get<IDataType<IHomeResult>>({
-    url: HomeApi.getHomeData
+  return Request.get<IDataType<IHomeResult>>({
+    url: HomeApi.getHomeData,
   }) 
 }

@@ -1,8 +1,16 @@
-const devBaseURL = "http://localhost:3000"
-const proBaseURL = "http://localhost:3000"
+let BASE_URL: string|undefined;
 
-const BASE_URL = process.env.NODE_ENV === 'development'
-                  ? devBaseURL : proBaseURL;
+if(process.env.REACT_APP_isMock) {
+  BASE_URL = process.env.REACT_APP_Mock_BaseURL;
+} else if(process.env.NODE_ENV === 'development' && !process.env.REACT_APP_isMock) {
+  BASE_URL = process.env.REACT_APP_DEV_BaseURL;
+} else if(process.env.NODE_ENV === 'production') {
+  BASE_URL = process.env.REACT_APP_PRO_BaseURL;
+}
+
+console.log(BASE_URL);
+
+
 const TIMEOUT = 5000;
 
 export {

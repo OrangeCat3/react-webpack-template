@@ -1,8 +1,9 @@
 // service统一出口
-import myRequest from './request'
-import { BASE_URL, TIMEOUT } from './request/config'
+import myRequest from './request';
+import { BASE_URL, TIMEOUT } from './request/config';
+import localCache from '@utils/cache';
 
-import localCache from '@utils/cache'
+console.log(BASE_URL);
 
 const Request = new myRequest({
   baseURL: BASE_URL,

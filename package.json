@@ -27,7 +27,7 @@
     "classnames": "^2.3.1",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.2.0",
-    "dotenv": "^10.0.0",
+    "dotenv": "^16.0.0",
     "dotenv-expand": "^5.1.0",
     "eslint": "^8.3.0",
     "eslint-config-react-app": "^7.0.0",
@@ -77,9 +77,11 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "start": "craco start && node ./mock/mockSever.js",
+    "start": "craco start",
+    "start no mock": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "mock": "nodemon ./src/mock/mockSever.js"
   },
   "eslintConfig": {
     "extends": [
@@ -101,6 +103,7 @@
   },
   "devDependencies": {
     "@craco/craco": "^6.4.3",
+    "@types/dotenv": "^8.2.0",
     "@types/koa": "^2.13.4",
     "@types/mockjs": "^1.0.6",
     "@types/react-redux": "^7.1.22",
@@ -108,8 +111,11 @@
     "@types/redux-immutable": "^4.0.2",
     "craco-alias": "^3.0.1",
     "craco-less": "^2.0.0",
+    "cross-env": "^7.0.3",
     "koa": "^2.13.4",
-    "mockjs": "^1.1.0"
+    "koa-router": "^10.1.1",
+    "mockjs": "^1.1.0",
+    "nodemon": "^2.0.15"
   },
   "jest": {
     "roots": [
