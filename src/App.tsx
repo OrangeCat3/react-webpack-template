@@ -5,6 +5,7 @@ import store from './store';
 import { BrowserRouter } from 'react-router-dom'
 import { renderRoutes } from "react-router-config";
 import { Provider } from 'react-redux';
+import '@locales/config';
 
 export default memo(function App() {
   return (

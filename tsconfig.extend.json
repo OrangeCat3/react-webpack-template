@@ -5,7 +5,7 @@
       "@assets/*": ["./assets/*"],
       "@common/*": ["./common/*"],
       "@components/*": ["./components/*"],
-      "@i18n/*": ["./i18n/*"],
+      "@locales/*": ["./locales/*"],
       "@pages/*": ["./pages/*"],
       "@router/*": ["./router/*"],
       "@services/*": ["./services/*"],
