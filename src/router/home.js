@@ -1,5 +1,6 @@
-import home from "@pages/home";
 import { Redirect } from "react-router-dom";
+import { lazy } from 'react';
+const home = lazy(() => import("@pages/home"));
 
 
 const routes = [

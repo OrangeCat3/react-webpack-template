@@ -16,7 +16,7 @@ function Home() {
 
   //发送网络请求
   useEffect(()=>{
-    // dispatch(getHomeAction());
+    dispatch(getHomeAction());
   },[dispatch])
 
 

@@ -1,4 +1,5 @@
-import page404 from '@pages/others/anomaly/404';
+import { lazy } from 'react';
+const page404 = lazy(() => import('@pages/others/anomaly/404'))
 
 const routes = [
   {

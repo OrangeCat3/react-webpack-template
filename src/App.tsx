@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React, { memo, Suspense } from 'react';
 import './App.less';
 import routes from "./router/index";
 import store from './store';
@@ -11,7 +11,9 @@ export default memo(function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        {renderRoutes(routes)}
+        <Suspense fallback={<h1>Loading....</h1>}>
+          {renderRoutes(routes)}
+        </Suspense>
       </BrowserRouter>
     </Provider>
   )
