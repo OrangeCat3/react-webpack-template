@@ -1,4 +1,5 @@
 {
+  "loading": "Loading...",
   "home": {
     "你好": "hello",
     "hello": "hallo"

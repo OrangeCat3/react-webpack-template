@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, memo } from 'react';
 import { Button } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { useSelector,shallowEqual, useDispatch } from 'react-redux';
@@ -32,4 +32,4 @@ function Home() {
   )
 }
 
-export default Home;
+export default memo(Home);
