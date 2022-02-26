@@ -21,5 +21,5 @@ app.use(homeRouter.routes());
 app.use(homeRouter.allowedMethods())
 
 app.listen(port,()=>{
-	console.log("mock服务开启成功")
+	console.log(`mock服务开启成功,拦截端口${port}`)
 })

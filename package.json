@@ -84,7 +84,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "mock": "nodemon ./src/mock/mockSever.js"
+    "mock": "nodemon ./mock/mockSever.js"
   },
   "eslintConfig": {
     "extends": [
