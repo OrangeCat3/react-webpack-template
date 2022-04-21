@@ -6,8 +6,8 @@ const parsed = require("dotenv").config({
   path: '.env.development'
 }).parsed;
 let port;
-if(parsed.REACT_APP_isMock) {
-  port = parsed.REACT_APP_Mock_BaseURL.split(":")[2].split('"')[0];
+if(parsed.REACT_APP_DEV_BaseURL) {
+  port = parsed.REACT_APP_DEV_BaseURL.split(":")[2].split('"')[0];
 }
 const app = new koa();
 //跨域设置
