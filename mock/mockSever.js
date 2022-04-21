@@ -12,7 +12,7 @@ if(parsed.REACT_APP_DEV_BaseURL) {
 const app = new koa();
 //跨域设置
 const cros = (ctx, next) => {
-  ctx.set("Access-Control-Allow-Origin", parsed.REACT_APP_DEV_BaseURL);
+  ctx.set("Access-Control-Allow-Origin", "*");
   next();
 }
 app.use(cros);
