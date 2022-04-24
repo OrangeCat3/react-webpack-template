@@ -25,7 +25,7 @@ yarn-error.log*
 .pnpm-debug.log*
 
 package-lock.json
-yarn.lock
+# yarn.lock
 pnpm-lock.yaml
 
 #ide
